@@ -17,7 +17,7 @@ body{
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: black;
+    background: rgb(108, 75, 198);
 }
 .wrapper{
    width: 1280px;
@@ -40,7 +40,7 @@ header{
 .logo i{
     height: 45px;
     width: 45px;
-    background-color: blueviolet;
+    background-color:blue;
     border-radius: 50%;
     color:black;
     font-weight: 700;
@@ -90,7 +90,7 @@ nav .navlinks li a{
     font-size: 14px;
 }
 .hero-text span{
-    color: rgb(30, 17, 214);
+    color:rgb(18, 164, 201);
     font-size: 16px;
 }
 .container{
@@ -104,7 +104,7 @@ nav .navlinks li a{
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    border:7px solid #6a6a67;
+    border:7px solid #cad7e5;
     box-shadow: 3px 7px 25px rgba(0,0,0,0.5)
 }
 .hero-pic img{
@@ -125,11 +125,11 @@ nav .navlinks li a{
     font-size:14px;
 }
 .hero-text h5 span{
-   color:blue;
+   color:rgb(1, 1, 11);
    font-size: 16px; 
 }
 .hero-text h1{
-    color: #007ced;
+    color:black;
     font-size:3rem;
 }
 .hero-text p{
@@ -150,7 +150,7 @@ nav .navlinks li a{
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 .btn.active{
-    border-color:#007ced;
+    border-color:brown;
 }
  .social i{
     color: aliceblue;
@@ -159,7 +159,7 @@ nav .navlinks li a{
     transition: 0.5s;
 }
 .social i:hover{
-    color:rgb(95, 23, 239);
+    color:darkblue;
     transform: rotate(360deg); 
 }
 /* Responsive design and displaying navbar for small screen */
@@ -195,7 +195,7 @@ nav .navlinks li a{
         bottom: 0;
         width: 60%;
         height: 100vh;
-        background-color: #16abf0;
+        background-color:black;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
         transition: 0.5s;
@@ -223,4 +223,7 @@ nav .navlinks li a{
         padding: 40px 0px;
 
     }
+}
+.wrapper{
+ margin-right: 100vh;   
 }
