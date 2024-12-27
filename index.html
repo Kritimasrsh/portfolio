@@ -63,7 +63,6 @@
             <p>Email: <a href="mailto:example@example.com">kritimashrestha71@gmail.com</a></p>
             <p>Phone: 9848674578</p>
             <p>Location: Bhaktapur, Nepal</p>
-       
         </div>
     </div>
 
@@ -71,22 +70,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script>
         /* creating button clicks show hide navbar */
-        var togglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector(".navlinks");
-        var links=document.querySelector(".navlinks li");
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
 
-        togglebtn.addEventListener("click",function(){
+        togglebtn.addEventListener("click", function() {
             this.classList.toggle("click");
             nav.classList.toggle("open");
         })
 
-        var typed=new Typed(".input",{
-            strings:["Web Developer","Frontend Developer"],
-            typedSpeed:75,
-            backSpeed:30,
-            loop:true
+        var typed = new Typed(".input", {
+            strings: ["Web Developer", "Frontend Developer"],
+            typedSpeed: 75,
+            backSpeed: 30,
+            loop: true
         })
-        
     </script>
 </body>
 </html>
