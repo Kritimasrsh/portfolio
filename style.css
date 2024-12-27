@@ -2,31 +2,40 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family: poppins,sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 body{
     overflow-x: hidden;
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
 }
 .profile-pic {
     width: 150px; 
     height: auto; 
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .hero-header{
     width: 100%;
-    height: auto; /* Changed from 100% to auto */
+    height: auto;
     min-height: 100vh;
-    background: rgb(108, 75, 198);
+    background: linear-gradient(to right, #6c4bc6, #3c3b6e);
+    color: white;
+    padding-top: 100px;
 }
 .wrapper{
-   width: 1280px;
+    width: 1280px;
     max-width: 95%;
     margin: 0 auto;
     padding: 0 20px;
 }
 header{
-    padding: 40px 0 30px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,9 +49,9 @@ header{
 .logo i{
     height: 45px;
     width: 45px;
-    background-color:blue;
+    background-color: white;
     border-radius: 50%;
-    color:black;
+    color: #6c4bc6;
     font-weight: 700;
     font-size: 1.5rem;
     padding: 10px;
@@ -53,17 +62,17 @@ header{
 .logo .logo-text{
     font-size: 24px;
     font-weight: 500;
-    color: aliceblue;
+    color: white;
 }
 nav .togglebtn{
     width: 35px;
     height: 35px;
     position: absolute;
-    top:45px;
+    top:25px;
     right: 3%;
     z-index: 5;
     cursor: pointer;
-    
+    display: none;
 }
 nav .togglebtn span{
     display: block;
@@ -73,24 +82,29 @@ nav .togglebtn span{
     height: 3px;
     transition: 0.3s;
     transition-property: transform, opacity;
-
 }
 nav .navlinks{
     list-style-type: none;
+    display: flex;
 }
 nav .navlinks li{
     display: inline-block;
 }
 nav .navlinks li a{
-    color:white;
+    color: white;
     margin-right: 2.5rem;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+nav .navlinks li a:hover{
+    color: #ffc107;
 }
 .hero-text{
     color: aliceblue;
     font-size: 14px;
 }
 .hero-text span{
-    color:rgb(18, 164, 201);
+    color: rgb(18, 164, 201);
     font-size: 16px;
 }
 .container{
@@ -104,11 +118,11 @@ nav .navlinks li a{
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    border:7px solid #cad7e5;
-    box-shadow: 3px 7px 25px rgba(0,0,0,0.5)
+    border: 7px solid #cad7e5;
+    box-shadow: 3px 7px 25px rgba(0,0,0,0.5);
 }
 .hero-pic img{
-    height:100%;
+    height: 100%;
     width: 100%;
     transition: 0.5s;
 }
@@ -116,24 +130,25 @@ nav .navlinks li a{
     transform: scale(1.2);
 }
 .hero-text{
-    max-width:500px;
-    display:flex;
+    max-width: 500px;
+    display: flex;
     flex-direction: column;
 }
 .hero-text h5{
     color: #e5e5e5;
-    font-size:14px;
+    font-size: 14px;
 }
 .hero-text h5 span{
-   color:rgb(1, 1, 11);
+   color: rgb(1, 1, 11);
    font-size: 16px; 
 }
 .hero-text h1{
-    color:black;
-    font-size:3rem;
+    color: white;
+    font-size: 3rem;
 }
 .hero-text p{
     color: #e5e5e5;
+    margin: 20px 0;
 }
 .btn-group{
     margin: 45px 0;
@@ -141,25 +156,31 @@ nav .navlinks li a{
 .btn-group .btn{
     border-color: aliceblue;
     color: white;
-    background-color:#333;
+    background-color: #333;
     padding: 12px 25px;
     margin: 5px 0;
     margin-right: 7px;
     border-radius: 30px;
     border: 2px solid white;
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-group .btn:hover{
+    background-color: #ffc107;
+    transform: scale(1.05);
 }
 .btn.active{
-    border-color:brown;
+    border-color: brown;
 }
- .social i{
-    color: aliceblue;
-    font-size: 18px;
+.social a{
+    display: inline-block;
     margin-right: 10px;
-    transition: 0.5s;
+    color: white;
+    font-size: 18px;
+    transition: color 0.5s, transform 0.5s;
 }
-.social i:hover{
-    color:darkblue;
+.social a:hover{
+    color: #ffc107;
     transform: rotate(360deg); 
 }
 /* Responsive design and displaying navbar for small screen */
@@ -168,7 +189,6 @@ nav .navlinks li a{
     nav .togglebtn{
         display: initial;
     }
-    /* for toggle button*/
     .click{
         top: 45px;
     }
@@ -191,21 +211,24 @@ nav .navlinks li a{
     nav .navlinks{
         position: absolute;
         top: 110px;
-        right:-60%;
+        right: -60%;
         bottom: 0;
         width: 60%;
-        height: auto; /* Changed from 100vh to auto */
-        background-color:black;
+        height: auto;
+        background-color: black;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
         transition: 0.5s;
         padding: 25px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     nav .navlinks li{
         display: block;
     }
     nav .navlinks li a{
-        display:block;
+        display: block;
         margin-bottom: 15px;
         text-align: center;
     }
@@ -221,9 +244,30 @@ nav .navlinks li a{
     }
     .hero-text{
         padding: 40px 0px;
-
     }
 }
 .wrapper{
- margin-right: 100vh;   
+    margin-right: 100vh;
+}
+.contact-section{
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+.contact-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.contact-section p{
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.contact-section a{
+    color: #6c4bc6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-section a:hover{
+    color: #3c3b6e;
 }
