@@ -15,7 +15,7 @@ body{
 
 .hero-header{
     width: 100%;
-    height: 100%;
+    height: auto; /* Changed from 100% to auto */
     min-height: 100vh;
     background: rgb(108, 75, 198);
 }
@@ -194,7 +194,7 @@ nav .navlinks li a{
         right:-60%;
         bottom: 0;
         width: 60%;
-        height: 100vh;
+        height: auto; /* Changed from 100vh to auto */
         background-color:black;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
