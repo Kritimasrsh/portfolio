@@ -271,3 +271,26 @@ nav .navlinks li a:hover{
 .contact-section a:hover{
     color: #3c3b6e;
 }
+.personal-details {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.personal-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #6c4bc6;
+}
+
+.personal-details p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.personal-details p strong {
+    font-weight: bold;
+}
